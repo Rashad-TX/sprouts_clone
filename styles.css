@@ -1,0 +1,987 @@
+/*Body*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*End Of Body*/
+
+
+/*--Navbar(Start)--*/
+.hdr-container{
+    display: flex;
+    align-items: center;
+    background-color: lightgreen;
+    height: 10rem;
+   
+}
+
+.container{
+    padding-left: 20rem;
+}
+
+.nav-items a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-style: bold;
+    color:white;
+    padding: 1rem;
+  
+  }
+
+  .nav-items a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;;
+    }
+
+  .exc-nav-btn{
+        background-color: #000;
+        background-image: none;
+        border: 1px solid #000;
+        border-radius: 4px;
+        box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 0.5rem;
+        margin: 0 5px 10px 0;
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+           }
+      
+
+
+  .exc-nav-btn:hover{
+      background-color: lightgray;
+      color: black;
+  }
+
+
+.nav-items li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-items a:hover{
+    color:white;
+}
+
+/* --Navbar(End)--*/
+
+.hero{
+    vertical-align: bottom;;
+}
+
+
+/* --Hamburger Menu(Start)--*/
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height:21px;
+
+   
+}
+.burgerbar{ 
+    height: 3px;
+    width: 100%;
+    background-color:white;
+    border-radius: 10px;
+}
+
+
+    
+
+/* --Hamburger Menu(End)--*/
+
+/*--Highlights Section --*/
+.hightlights{
+    padding-top: 10rem;
+}
+
+
+.highlight-container{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    padding-right: 20rem;
+    padding-top: 5rem;
+    align-content: flex-start;
+    column-gap: 16rem;
+    row-gap: 1rem;
+
+    
+ }
+
+.slogan{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-self:center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.slogan-text{
+        font-size: 3.5rem;
+        color: lightgreen;
+}
+
+
+.image{
+    position: relative;
+    width: 100px;
+
+ 
+}
+
+.image__img{
+    display: block;
+    width: 350%;
+}
+
+.image__overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 350%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover > *{
+    transform: translateY(0px);
+}
+
+.image__title{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.image__description{
+    font-size: 2em;
+    margin-top: 0.25em;
+
+}
+
+
+/*--Multi Section --*/
+.menu-container{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+       align-items: center;
+}
+
+.col{
+    flex: 1;
+}
+
+.gym-container{
+    background-color: black;
+    display:flex;
+    justify-content: center;
+       align-items: center;
+       padding-left: 5rem;
+}
+
+.man-cave-container{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+       align-items: center;
+}
+
+
+
+.menu-desc{
+       font-size: 2rem;
+  
+}
+
+
+.gym-desc{
+    font-size: 2rem;
+    color: white;
+
+}
+.cave-desc{
+    font-size: 2rem;
+
+}
+
+.menu-btn{
+width: 12rem;
+height: 5rem;
+font-size: 2rem;
+background-color: black;
+color: lightgreen;
+border-radius:10px;
+
+}
+
+
+.gym-btn{
+    width: 12rem;
+    height: 5rem;
+    font-size: 2rem;
+    background-color: lightgreen;
+    color: black;
+    border-radius:10px;
+    
+    }
+
+    .cave-btn{
+        width: 12rem;
+        height: 5rem;
+        font-size: 2rem;
+        background-color: black;
+        color: lightgreen;
+        border-radius:10px;
+        
+        }
+
+
+        .menu-btn,.gym-btn,.cave-btn{
+        cursor:pointer;
+
+        }
+        
+
+
+    /*--Menu Section --*/    
+
+    /*--Footer Section --*/
+    .myFooter{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: lightgreen;
+        padding: 3rem;
+    }
+
+    .myFooter ul{
+       list-style-type: none;
+    }
+
+    .links li{
+        font-size:1.5rem;
+    }
+
+    .iconList li{
+        display: inline;
+        padding: 1rem;
+               
+    }
+
+    .iconList li:hover{
+       cursor: pointer;
+               
+    }
+
+
+    .hours li{
+        font-size: 1.5rem
+    }
+
+
+     /*--Global --*/
+.fun{
+
+font-family: 'Permanent Marker', cursive;
+color: lightgreen;
+
+}
+
+.hdr{
+    font-size:3rem;
+}
+
+    /*--AboutUs.html --*/
+
+.about-area{
+    width:100%;
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+}
+
+   .abt-hdr{
+      font-family: 'Permanent Marker', cursive;
+    color:lightgreen;
+    font-size: 10rem;
+
+   } 
+
+   .abt-heading{
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       padding-bottom:10rem;
+       justify-content: space-between;
+       margin-left: 1rem;
+   }
+
+   .about-desc{
+       font-size:2rem;
+       margin-left: 2rem;
+   }
+
+   .topic-hdr{
+   text-align: center;
+       text-decoration: underline;
+      font-style: italic;
+       color: lightgreen;
+       font-weight:bolder;
+       font-size: 3rem;
+   }
+
+ /*--End Of AboutUs.html --*/
+
+  /*--Menu.html --*/
+
+
+  .menu-title{
+     font-family: 'Permanent Marker', cursive;
+    color:lightgreen;
+    font-size: 10rem;
+    text-align: center;
+  }
+  .the-menu-area{
+      background-color: white;
+      width: 100%;
+     
+  }
+
+  
+  .accordion-container{
+      background:white;
+      width: 100%;
+      border: 1px solid #ccc;
+  }
+
+  .accord-header {
+      background: black;
+     padding: 1rem 1.25rem;
+     cursor: pointer;
+  }
+
+  .accord-body{
+      padding: 1rem 1.25rem;
+  }
+
+  .accord-content{
+      height:fit-content;
+      transition: all 0.4s ease-out;
+      overflow: hidden;
+  }
+
+  .accord-item{
+      border-bottom: 1px solid #ccc;
+  }
+
+  .accord-item :last-of-type{
+      border:none;
+  }
+
+  .acccord-title{
+       font-family: 'Permanent Marker', cursive;
+    color:lightgreen;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .collapse{
+height: 0px;
+
+  }
+
+.the-items{
+    font-size: 3rem;
+    text-align: center;
+}
+ 
+  /*--End Of Menu.html --*/
+
+    /*--Eventshtml --*/
+.events-section{
+    width:100%;
+    background-color: white;
+}
+.events-hdr{
+    font-family: 'Permanent Marker', cursive;
+    color:lightgreen;
+    font-size: 6rem;
+    text-align: center; 
+}
+
+.carousel{
+    position: relative;     
+}
+    
+    .carousel__item {
+             font-family: 'Permanent Marker', cursive;
+        display: none;
+    
+    }
+
+    .car_img{
+        width: 95%;
+        margin-left:3rem;
+        margin-bottom: 2rem;
+        padding-right: 2rem;
+    }
+
+    .carousel__item--selected{
+        display: block;
+    }
+
+    .carousel__nav{
+        width: 100%;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        text-align: center;
+        
+    }
+
+    .carousel__button{
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+        background: white;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .carousel__button--selected {
+        background: gray
+
+    }
+ /*--End of Eventshtml --*/
+
+
+ /*--Start of mancave --*/
+ 
+ .form-cont{
+     border: black solid 0.5rem;
+     background-color: lightgrey;
+     padding: 0.5rem;
+ }
+ 
+ 
+ 
+ .room-container{
+    
+     display: flex;
+    flex-direction: row;
+     align-items: center;
+     
+
+}
+.room-hdr{
+    font-family: 'Permanent Marker', cursive;
+    color:lightgreen;
+    font-size: 4rem;
+    text-align: center; 
+
+}
+
+.room-slogan{
+    text-align: center;
+    justify-content: center;
+}
+
+    .res-form {
+       width: 25%;
+        padding: 2rem;
+      }
+
+
+      
+      div.elem-group {
+        margin: 0.5rem 0;
+      }
+      
+      div.elem-group.inlined {
+        width: 100%;
+        display: inline-block;
+        margin-left: 1%;
+      
+      }
+      
+      label {
+        display: block;
+        font-family: 'Nanum Gothic';
+        padding-bottom: 0.5rem;
+        font-size: 1.25em;
+      }
+      
+      input, select {
+        border-radius: 2px;
+        border: 2px solid #777;
+        box-sizing: border-box;
+        font-size: 1.25em;
+        width: 100%;
+        padding: 10px;
+      }
+      
+           
+      .res-form-button {
+        max-height:fit-content;
+        background: lightgreen;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        
+
+      }
+      
+      .res-form-button:hover {
+        border: 2px solid black;
+      }
+
+      .room-container{
+          display:flex;
+        width:100%;
+          flex-wrap:wrap;
+          justify-content: center;
+     
+      }
+
+      .rooms-img{
+          padding: 1rem;
+      }
+
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    top:0;
+    left: 0;
+    height:100%;
+    width:100%;
+    background-color: rgba(00,0,0,0.3);
+    pointer-events: none;
+  
+}
+
+.modal-container.show{ 
+    pointer-events: auto;
+    opacity: 1;
+
+}
+
+.modal {
+    background-color: #fff;
+    width: 50rem;
+    max-width:100%;
+    padding: 30px 50px;
+    border-radius:10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center ;
+}
+
+.modal h1 {
+    margin: 0;
+}
+.modal p {
+    font-size: 1.6rem;
+    opacity: 0.7;
+}
+
+.close{
+    background-color: lightgreen;
+    width: 6rem;
+    padding:0.5rem;
+    font-size: 1.3rem;
+}
+ /*--End of mancave --*/
+
+
+ .expl-cont{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+
+
+
+  /*--Start of excuses --*/
+.exc-hdr{
+ color: lightgreen;
+ font-size: 4rem;   
+ font-family: 'Permanent Marker', cursive;
+ text-align: center;
+}
+
+
+  .main-api-area{
+    background-color: white;
+}
+
+
+
+.exc-inst{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.excuse-cont{
+    display:flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.exc-txt{
+    color: black;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+
+.api-btn{
+width: 30rem;
+ font-size:2.5rem;
+ text-decoration: none;
+ background-color: #000;
+        background-image: none;
+        border: 1px solid #000;
+        border-radius: 4px;
+        box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 0.5rem;
+        margin: 0 5px 10px 0;
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+ text-transform: uppercase;
+ transition: all 0.2s ease-in-out;
+}
+
+.api-btn:hover{
+    color: lightgreen;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    cursor: pointer;
+}
+
+.excuse-cont{
+    margin-bottom: 2rem;
+}
+
+.api-results{
+    width: 100%;
+    background-color: black;
+}
+
+
+
+#excuse{
+color: lightgreen;
+font-size: 3.5rem;
+}
+
+.api-results{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*Start Of Media Queries */
+
+/*Hamburger Menu*/
+@media (max-width:1050px) {
+
+    .toggle-button{ 
+        display:flex;
+    }
+    
+    .nav-items{
+    display: none;
+           }
+
+
+    .nav-items.active{
+        display: flex;
+        flex-direction: column;
+  
+     }
+    
+.toggle-menu{
+    background-color:black;
+    display:flex;
+    justify-content:flex-start;
+}
+
+    
+    .hdr-container{
+        flex-direction: column;
+        align-items: flex-start;
+        height:fit-content;
+        
+    }
+    
+    .container{
+        padding-left: 0rem;
+    }
+
+    .slogan-text{
+font-size: 2.5rem;
+
+    }
+
+.drink-img, .gym-img, .cave-img{
+width: 350px;
+}
+
+.hdr {
+    font-size: 2rem;
+
+}
+
+.menu-desc, .gym-desc, .cave-desc{
+font-size: 1.5rem;
+}
+
+.menu-btn, .cave-btn, .gym-btn{
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;    
+    border-radius:10px;
+}
+.res-form{
+    width: 50%;
+}
+
+
+}
+
+@media (max-width: 768px){
+    .abt-hdr{
+        font-size: 8rem;
+    }
+
+    .res-form{
+        width:50%;
+    }
+}
+
+
+
+
+@media (max-width:576px) {
+    .drink-img, .gym-img, .cave-img{
+        width: 350px;
+        }
+        
+        .hdr {
+            font-size: 1.3rem;
+        
+        }
+        
+        .menu-desc, .gym-desc, .cave-desc{
+        font-size: 1rem;
+        }
+        
+        .menu-btn, .cave-btn, .gym-btn{
+            width: 6rem;
+            height: 3rem;
+            font-size: 1rem;    
+            border-radius:10px;
+        }
+
+        .abt-hdr{
+            font-size: 6rem;
+        }
+        .nobooze-img{
+            width: 200px;
+        }
+
+        .hours{
+            display: none;
+         }
+
+         .the-items{
+            font-size: 2rem;
+         }
+.menu-title{
+    font-size: 5rem;
+
+}
+.expl{
+    font-size: 1.5rem;
+    padding-left:1rem;
+    padding-right: 0.5rem;
+}
+
+}
+
+@media (max-width:450px) {
+    .slogan-text{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }                                   
+    
+#highlights{
+    display:none;
+}
+
+
+ .menu-desc, .gym-desc, .cave-desc{
+    display: none;
+    }
+
+    .drink-img, .gym-img, .cave-img{
+        width: 150px;
+        }
+
+.image__img{
+    width: 25px
+}
+
+
+}
+
+@media (max-width: 415px){
+    .about-desc{
+        inline-size: 80%;
+    }
+    
+    
+    .abt-hdr{
+        font-size: 3rem;
+        padding-top:1rem;
+    }
+    .nobooze-img{
+        width: 100px;
+        padding-top:1rem;
+    }
+  
+.about-text{
+font-size: 0.8rem;
+word-wrap:all;
+}
+
+    .topic-hdr{
+        font-size:1.5rem;
+        }
+
+.menu-title{
+    font-size: 3rem;
+}
+
+.acccord-title{
+    font-size: 2rem;
+}
+.the-items{
+    font-size: 1rem;
+ }
+
+ .events-hdr{
+    font-size: 4rem;
+ }
+
+ .carousel__button{
+    width: 1.5rem;
+    height: 1.5rem;
+       
+}
+
+.room-slogan{
+    font-size: 4rem;
+}
+
+.res-form{
+    width:75%;
+}
+
+.modal-container{
+inline-size: 90%;
+}
+.modal-container h1{
+    font-size: 1rem;
+    word-wrap: all;
+
+}
+
+.modal-container p{
+    font-size: 0.8rem;
+    word-wrap: all;
+
+}
+.close{
+    font-size:0.5rem;
+    width:fit-content;
+    height: fit-content;
+    
+}  
+
+.rooms-img{
+    padding:2;
+   
+   max-height:20rem;
+}
+
+}
+
+   
+
+  
+
+    
+ 
+    
+  
+    
+    
+    
+ 
+    
+
+
